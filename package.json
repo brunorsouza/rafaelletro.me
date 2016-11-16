@@ -1,0 +1,22 @@
+{
+  "name": "rafaelletro.me",
+  "version": "1.0.0",
+  "description": "my portifolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelbletro/rafaelletro.me.git"
+  },
+  "author": "Rafael Letro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelbletro/rafaelletro.me/issues"
+  },
+  "homepage": "https://github.com/rafaelbletro/rafaelletro.me#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}
