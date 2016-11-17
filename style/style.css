@@ -9,7 +9,8 @@ section, div {
   /* Opera/IE 8+ */ }
 
 body, div, section {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 h1, h2, h3, h4, p {
   margin: 0em;
@@ -23,7 +24,7 @@ p {
 
 a {
   text-decoration: none;
-  color: black; }
+  color: #3c4859; }
 
 .circle-image {
   border-radius: 100%; }
@@ -33,7 +34,8 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   background-color: #F5F0F6;
-  justify-content: center; }
+  justify-content: center;
+  color: #3c4859; }
 
 .content {
   z-index: 1;
@@ -69,5 +71,39 @@ html, body {
     #profile #social-profiles a {
       color: white;
       padding: 10px; }
+
+#apps {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #apps .app {
+    max-width: 25%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    /* Landscape phones and portrait tablets */
+    /* Portrait phones and smaller */ }
+    #apps .app img {
+      border-radius: 30px; }
+    #apps .app p {
+      padding-top: 10px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 1.2em; }
+    @media (max-width: 767px) {
+      #apps .app {
+        width: calc(50% - 80px);
+        max-width: 100%; } }
+    @media (max-width: 480px) {
+      #apps .app {
+        width: calc(100% - 40px); } }
 
 /*# sourceMappingURL=style.css.map */

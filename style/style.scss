@@ -4,7 +4,7 @@
 
 
 $white-smoke: #F5F0F6;
-
+$text-color:#3c4859;
 
 @mixin filter($filter-type,$filter-amount) { 
   -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
@@ -22,6 +22,8 @@ section,div{
 
 body,div,section{
 	display: flex;
+	flex-wrap:wrap;
+
 }
 
 h1,h2,h3,h4,p{
@@ -38,7 +40,7 @@ p{
 
 a{
 	text-decoration:none;
-	color:black;
+	color:$text-color;
 }
 .circle-image{
 	border-radius:100%;
@@ -50,6 +52,8 @@ html,body{
 	font-family: 'Open Sans', sans-serif;
 	background-color: $white-smoke;
 	justify-content:center;
+	color:$text-color;
+
 }
 
 .content{
@@ -98,4 +102,46 @@ html,body{
 
 	}
 
+#apps{
+	margin-top:80px;
+	margin-bottom:80px;
+	width:100%;
+	max-width:1200px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	.app{
+		max-width: 25%;
+		// background-color:red;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		padding:20px;
+		border-radius:10px;
+		margin:20px;
+		img{
+			border-radius: 30px;	
+		}	
+		p{
+			padding-top:10px;
+			width: 100%;
+			font-weight: 700;
+			font-size:1.2em;
+		}
+
+		/* Landscape phones and portrait tablets */
+		@media (max-width: 767px) {
+			width: calc(50% - 80px);	
+			max-width: 100%;
+		}
+
+		/* Portrait phones and smaller */
+		@media (max-width: 480px) {
+			width: calc(100% - 40px);	
+		}
+	}
+
+
+}
 
