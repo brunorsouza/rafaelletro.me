@@ -77,8 +77,9 @@ html,body{
 			position:relative;
 			width: 100%;
 			height: 100%;
-			background-image: url('http://blog.emania.com.br/content/uploads/2015/12/Papel-de-Parede-de-Paisagem.jpg');
+			background-image: url('../images/profile/capa.jpg');
 			background-size:cover;
+			background-position:center center;
 			position:absolute;
 			z-index: 0;
 			filter: blur(5px);
